@@ -16,7 +16,7 @@ export const getPosts = async () => {
 
 export const getPostBySlug = async (id) => {
     try {
-        const { data } = await api.get(`/posts/${id}`);
+        const { data } = await api.get(`/posts?select=3359724a-e29d-42a7-9c3e-3c7b11b3a005'`);
         return data;
     } catch (error) {
         console.error('Erro ao buscar post:', error);
